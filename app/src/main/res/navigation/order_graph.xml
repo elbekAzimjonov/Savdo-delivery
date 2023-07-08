@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_graph"
+    app:startDestination="@id/newOrdersFragment">
+
+    <fragment
+        android:id="@+id/newOrdersFragment"
+        android:name="com.imsoft.savdodelivery.presentation.fragments.NewOrdersFragment"
+        android:label="fragment_new_orders"
+        tools:layout="@layout/fragment_new_orders" />
+    <fragment
+        android:id="@+id/myOrdersFragment"
+        android:name="com.imsoft.savdodelivery.presentation.fragments.MyOrdersFragment"
+        android:label="fragment_my_orders"
+        tools:layout="@layout/fragment_my_orders" />
+</navigation>

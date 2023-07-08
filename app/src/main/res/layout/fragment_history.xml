@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5FA"
+    tools:context=".presentation.fragments.HistoryFragment"
+    tools:ignore="HardcodedText,ContentDescription">
+
+    <RelativeLayout
+        android:id="@+id/centerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/centerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Arxiv"
+            android:textColor="#4447E2"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_customer_back" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/centerContainer"
+        android:layout_marginTop="39dp"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/history_item" />
+
+    <ProgressBar
+        android:id="@+id/loadProgress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="#2F49D1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/ordersNotFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Buyurtmalar Topilmadi"
+        android:textColor="#4447E2"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>

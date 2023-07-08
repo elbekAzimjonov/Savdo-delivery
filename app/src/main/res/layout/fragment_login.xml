@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".presentation.fragments.LoginFragment"
+    tools:ignore="RtlSymmetry,Autofill,ContentDescription,UselessParent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rectangle_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:background="@drawable/login_rectangle">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_group_logo" />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/ic_login_rectangle"
+                android:drawableStart="@drawable/ic_call"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="@string/hint_number"
+                android:inputType="phone"
+                android:paddingStart="22dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_login_rectangle"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="@string/password"
+                android:inputType="numberPassword"
+                android:paddingStart="22dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/login_button"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/enter"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/loadProgress"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:indeterminateTint="#2F49D1"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/login_info_rectangle">
+
+            <TextView
+                android:id="@+id/login_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginTop="31dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="@string/info_login"
+                android:textColor="#4F4F4F"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/connectWithWe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_info"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_button"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_call_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/connect_me"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

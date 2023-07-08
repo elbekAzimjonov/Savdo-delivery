@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5FA"
+    tools:ignore="HardcodedText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/history_rectangle"
+        tools:ignore="UselessParent,ContentDescription">
+
+        <ImageView
+            android:id="@+id/startImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/his_left"
+            android:backgroundTint="#DFE2E9"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_map_success" />
+
+        <TextView
+            android:id="@+id/orderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/startImage"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="@string/orderHistory"
+            android:textColor="#64697E"
+            android:textSize="16sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="14dp"
+            android:text="@string/date"
+            android:textColor="#939EB4"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="14dp"
+            android:layout_toStartOf="@id/date"
+            android:text="@string/history_time"
+            android:textColor="#939EB4"
+            android:textSize="10sp"
+            tools:ignore="RelativeOverlap,SmallSp" />
+
+        <TextView
+            android:id="@+id/customerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderText"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/startImage"
+            android:text="@string/customer_name"
+            android:textColor="#84BDF2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderText"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/customerTextView"
+            android:text="@string/name"
+            android:textColor="#4447E2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/orderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customerTextView"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/startImage"
+            android:text="@string/order_type"
+            android:textColor="#84BDF2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ordersType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customerTextView"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/orderTextView"
+            android:text="@string/valyuta"
+            android:textColor="#4447E2"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/centerLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderTextView"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/startImage"
+            android:src="@drawable/ic_line_vec" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/centerLine"
+            android:layout_toEndOf="@id/startImage">
+
+            <TextView
+                android:id="@+id/orderPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="21dp"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:gravity="center_vertical"
+                android:text="51 690 000 cўм"
+                android:textColor="#2F49D1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/orderDollarPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/orderPrice"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:gravity="center_vertical"
+                android:text=" | $0"
+                android:textColor="#2F49D1"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

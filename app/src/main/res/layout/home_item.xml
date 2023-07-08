@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="ContentDescription,UselessParent">
+
+    <RelativeLayout
+        android:layout_width="171dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_rectangle_home">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="146dp"
+            android:layout_height="115dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:elevation="0dp"
+            app:cardBackgroundColor="#3F41D3"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/cityImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_group_image" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Farg’ona"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

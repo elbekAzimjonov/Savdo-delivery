@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5FA"
+    tools:context=".presentation.fragments.ProfileFragment"
+    tools:ignore="HardcodedText,SpUsage,ContentDescription">
+
+    <TextView
+        android:id="@+id/centerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Shaxsiy kabinet"
+        android:textColor="#4447E2"
+        android:textSize="20dp"
+        tools:ignore="SpUsage" />
+
+    <ImageView
+        android:id="@+id/onBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/ic_customer_back" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_below="@id/centerTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_group_user" />
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/userImage"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp">
+
+            <RelativeLayout
+                android:id="@+id/userContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="23dp"
+
+                android:background="@drawable/profile_rectangle">
+
+                <ImageView
+                    android:id="@+id/userIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_frame_user"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_toEndOf="@id/userIcon"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Jakhongir Ruzaliev"
+                    android:textColor="#4447E2"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/companyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userContainer"
+                android:layout_marginHorizontal="23dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/profile_rectangle">
+
+                <ImageView
+                    android:id="@+id/companyIco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_user_octagon"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_toEndOf="@id/companyIco"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Firma nomi"
+                    android:textColor="#4447E2"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/multiple_accounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/companyName"
+                android:layout_marginHorizontal="23dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/profile_rectangle">
+
+                <ImageView
+                    android:id="@+id/akkaunt_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_profile_two_users"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_toEndOf="@id/akkaunt_icon"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Akkauntlar"
+                    android:textColor="#4447E2"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_multiple_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lock_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/multiple_accounts"
+                android:layout_marginHorizontal="23dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/profile_rectangle">
+
+                <ImageView
+                    android:id="@+id/lock_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_shield_security"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_toEndOf="@id/lock_icon"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Screen Lock"
+                    android:textColor="#4447E2"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/phoneContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lock_container"
+                android:layout_marginHorizontal="23dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/profile_rectangle">
+
+                <ImageView
+                    android:id="@+id/phone_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_call_profile"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_toEndOf="@id/phone_icon"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="+998 (33) 510-95-95"
+                    android:textColor="#A7C2D8"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/regionContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneContainer"
+                android:layout_marginHorizontal="23dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/profile_rectangle">
+
+                <ImageView
+                    android:id="@+id/region_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_courthouse"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_toEndOf="@id/region_icon"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Farg’ona viloyati"
+                    android:textColor="#A7C2D8"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regionContainer"
+                android:layout_marginHorizontal="23dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/profile_rectangle">
+
+                <ImageView
+                    android:id="@+id/home_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_gps"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_toEndOf="@id/home_icon"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Oltiariq tumani, Turon, 39-uy"
+                    android:textColor="#A7C2D8"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

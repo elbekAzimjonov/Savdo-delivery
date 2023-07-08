@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F6FF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/account_rectangle">
+
+        <ImageView
+            android:id="@+id/brend"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/brend" />
+
+        <TextView
+            android:id="@+id/accauntName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/brend"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Liqui Moly"
+            android:textColor="#4447E2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accauntName"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/brend"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Jakhongir Ruzaliev"
+            android:textColor="#A7C2D8"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

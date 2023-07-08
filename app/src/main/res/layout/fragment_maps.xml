@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments.MapsFragment"
+    tools:ignore="ContentDescription,HardcodedText">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        tools:ignore="FragmentTagUsage" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_map_top_rectangle"
+        android:clickable="true"
+        android:focusable="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/white"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:elevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/onBackMap"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_customer_back" />
+
+                <TextView
+                    android:id="@+id/orderNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Buyurtma №53"
+                    android:textColor="#4447E2"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/customerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appBarLayout"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp"
+            android:text="Mijoz nomi:"
+            android:textColor="#84BDF2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/customName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appBarLayout"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="80dp"
+            android:layout_toEndOf="@id/customerTextView"
+            android:text="Jahangir"
+            android:textColor="#4447E2"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/mapCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appBarLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/map_but_rectangle"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_map_phone" />
+
+        <ImageView
+            android:id="@+id/orderList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mapCall"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/map_but_rectangle"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_map_list" />
+
+        <TextView
+            android:id="@+id/mapTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customerTextView"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="16:56"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mapOrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customerTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/mapTime"
+            android:text="04/06/2021"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mapOrderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mapCall"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="51 690 000 cўм"
+            android:textColor="#2F49D1"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/acceptedOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_map_bot_rectangle"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/acceptedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Buyurtmani Qabul qilish"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18sp"
+            android:src="@drawable/ic_map_success" />
+    </LinearLayout>
+</RelativeLayout>

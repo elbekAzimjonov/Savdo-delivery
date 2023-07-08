@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="UselessParent,RelativeOverlap,HardcodedText,SmallSp">
+
+    <RelativeLayout
+        android:layout_width="376dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="19dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_order_rectangle1">
+
+        <TextView
+            android:id="@+id/orderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="@string/order"
+            android:textColor="#64697E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/customerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/orderText"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="5dp"
+            android:text="Mijoz nomi:"
+            android:textColor="#84BDF2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderText"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/customerTextView"
+            android:text="Jahongir"
+            android:textColor="#4447E2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="14dp"
+            android:text="04/06/2021"
+            android:textColor="#939EB4"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@id/date"
+            android:text="16:56"
+            android:textColor="#939EB4"
+            android:textSize="10sp" />
+
+        <ImageView
+
+            android:id="@+id/centerLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_line_vec"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/centerLine"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/ic_rectangle_enter"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_enter"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/orderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/centerLine"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="51 690 000 cўм"
+            android:textColor="#2F49D1"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

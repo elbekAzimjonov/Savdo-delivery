@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_rectangle_order"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="COMPRESSOR OIL"
+            android:textColor="#64697E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bolim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productName"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Бўлими:"
+            android:textColor="#68D16D"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/orderType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productName"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/bolim"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Енгил машина"
+            android:textColor="#29388F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/fullPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderType"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="3 х 6 690 000 cўм"
+            android:textColor="#29388F"
+            android:textSize="16dp" />
+    </RelativeLayout>
+</RelativeLayout>

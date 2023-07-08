@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="377dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/agent_dialog_rectangle">
+
+        <EditText
+            android:id="@+id/searchAgent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="19dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/add_rectangle"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Search"
+            android:paddingStart="20dp"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/spinnerRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchAgent"
+            android:layout_marginHorizontal="19dp"
+            android:layout_marginTop="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/agents_item" />
+
+        <ProgressBar
+            android:id="@+id/loadProgress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="#2DAFE7"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/productNotFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Mijozlar topilmadi!"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

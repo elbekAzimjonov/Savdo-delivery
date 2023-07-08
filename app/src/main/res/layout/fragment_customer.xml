@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5FA"
+    tools:context=".presentation.fragments.CustomerFragment"
+    tools:ignore="ContentDescription,HardcodedText">
+
+    <RelativeLayout
+        android:id="@+id/centerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/centerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Buyurtmalar"
+            android:textColor="#4447E2"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/customerBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_customer_back" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/newOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerContainer"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/active_button"
+        android:fontFamily="@font/montserrat_regular"
+        android:stateListAnimator="@null"
+        android:text="Yangi buyurtma"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/myOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerContainer"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/inactive_button"
+        android:fontFamily="@font/montserrat_regular"
+        android:stateListAnimator="@null"
+        android:text="Buyurtmalarim"
+        android:textAllCaps="false"
+        android:textColor="#4447E2"
+        android:textSize="14sp" />
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myOrders"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

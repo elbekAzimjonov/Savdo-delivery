@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Savdo delivery</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="companies">Firmalar</string>
+    <string name="search">Qidirish</string>
+    <string name="hint_number">+998 (--) --- -- --</string>
+    <string name="password">Parol</string>
+    <string name="enter">Kirish</string>
+    <string name="info_login">Agar ushbu firma dasturidan ro’yxatdan o’tmagan bo’lsangiz, iltimos biz bilan bog’laning va ro’yxatdan o’ting!</string>
+    <string name="connect_me">Biz bilan bog’lanish</string>
+    <string name="new_orders">Yangi buyurtma</string>
+    <string name="hi_ho">Hayrli kun! 👋🏻</string>
+    <string name="user_name">Jakhongir \nSagatov</string>
+    <string name="payment">To’lov</string>
+    <string name="arhiv">Arhiv</string>
+    <string name="graph">Hisobot</string>
+    <string name="order">Buyurtma № 54</string>
+    <string name="orderHistory">Buyurtma</string>
+    <string name="date">04/06/2021</string>
+    <string name="history_time">16:56</string>
+    <string name="customer_name">Mijoz nomi:</string>
+    <string name="name">Jahongir</string>
+    <string name="order_type">Buyurtma turi:</string>
+    <string name="valyuta">Valyuta</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="accounts">Akauntlar</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6FF"
+    tools:context=".presentation.fragments.AccountFragment">
+
+    <TextView
+        android:id="@+id/centerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/accounts"
+        android:textColor="#4447E2"
+        android:textSize="20dp"
+        tools:ignore="SpUsage" />
+
+    <ImageView
+        android:id="@+id/onBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/ic_customer_back"
+        tools:ignore="ContentDescription" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/accountRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/centerTextView"
+        android:layout_marginTop="38dp"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/account_item" />
+</RelativeLayout>

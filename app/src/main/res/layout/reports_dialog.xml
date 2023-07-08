@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/reportsImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_graph_reports" />
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/ic_close_dialog" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@id/reportsImage"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="To’lov qilish"
+            android:textColor="#4447E2"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/centerView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/reportsImage"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/startDate"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reportsImage"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/centerView"
+            android:background="@drawable/ic_reports_rectangle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Sana 1"
+                android:textColor="#4447E2"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="27dp"
+                android:src="@drawable/ic_vector_spinner" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/endDate"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reportsImage"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toEndOf="@id/centerView"
+            android:background="@drawable/ic_reports_rectangle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Sana 2"
+                android:textColor="#4447E2"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="27dp"
+                android:src="@drawable/ic_vector_spinner" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/selectCustomer"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/dialog_rectangle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="21dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Mijozni tanlang"
+                android:textColor="#4447E2"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="21dp"
+                android:src="@drawable/ic_vector_spinner" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/selectAgent"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectCustomer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/dialog_rectangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectCustomer">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="21dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Agentni tanlang"
+                android:textColor="#4447E2"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="22dp"
+                android:src="@drawable/ic_vector_spinner" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectAgent"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="26dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#2F49D1"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Qarz qoldiq"
+                android:textColor="#2F49D1"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:buttonTint="#2F49D1"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Solishtirma dal"
+                android:textColor="#2F49D1"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:buttonTint="#2F49D1"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Mijoz kartasi orqali"
+                android:textColor="#2F49D1"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/continueBtn"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ic_rectangle_button"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Davom etish"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+</RelativeLayout>

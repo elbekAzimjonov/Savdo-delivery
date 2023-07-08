@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5FA"
+    tools:context=".presentation.fragments.HomeFragment"
+    tools:ignore="Autofill,LabelFor,RtlSymmetry">
+
+    <TextView
+        android:id="@+id/centerTopView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/companies"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerTopView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/search_background"
+        android:drawableStart="@drawable/ic_search_normal"
+        android:drawableEnd="@drawable/ic_shopping_cart"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:paddingHorizontal="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="#A7C2D8"
+        android:textSize="14sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchView"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="8dp"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/home_item" />
+    <ProgressBar
+        android:id="@+id/loadProgress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="#1C6DD0"
+        android:visibility="gone" />
+</RelativeLayout>
